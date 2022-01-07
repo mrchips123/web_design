@@ -1,0 +1,23 @@
+.desktop, .print {
+    display: none;
+}
+
+@media print{
+    .desktop, .mobile {
+        display: none;
+    }
+
+    .print {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .mobile {
+        display: none;
+    }    
+
+    .desktop {
+        display: block;
+    }
+}
